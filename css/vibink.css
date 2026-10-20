@@ -1,0 +1,168 @@
+/**
+ * Vibin K Portfolio - Dedicated Interactive Components & Animations
+ * Scoped and crafted to harmonize 100% with editorial.css theme
+ */
+
+/* Blueprint Interactive Pins */
+.blueprint-pin {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+  z-index: 5;
+}
+
+.blueprint-pin .pin-core {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #b75116;
+  box-shadow: 0 0 0 5px rgba(183, 81, 22, 0.25);
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blueprint-pin:hover .pin-core,
+.blueprint-pin.active .pin-core {
+  transform: scale(1.3);
+  background: #b75116;
+  box-shadow: 0 0 0 7px rgba(183, 81, 22, 0.4);
+}
+
+.blueprint-pin .pin-label {
+  background: #24241e;
+  border: 1px solid #3c3a32;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.blueprint-pin.active .pin-label {
+  background: #b75116;
+  border-color: #b75116;
+}
+
+/* SMS Simulator & Notification Animations */
+@keyframes notifSlideDown {
+  0% { transform: translateY(-16px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.android-notif-card.flash-in {
+  animation: notifSlideDown 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border-color: #b75116 !important;
+}
+
+.sms-test-btn {
+  transition: all 0.2s ease;
+}
+
+.sms-test-btn:hover {
+  background: #fff !important;
+  border-color: #b75116 !important;
+  transform: translateX(4px);
+}
+
+/* Project Dialog & Modal */
+.editorial-theme .project-dialog {
+  border-radius: 24px;
+  background: #fffdf8;
+  border: 1px solid #d8cdbc;
+  box-shadow: 0 25px 90px rgba(33, 27, 23, 0.25);
+  max-width: 680px;
+  width: calc(100% - 40px);
+  padding: 35px 32px;
+}
+
+.editorial-theme .project-dialog::backdrop {
+  background: rgba(30, 26, 22, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+/* Google Play Badges & Action Buttons */
+.playstore-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0ebe1;
+  border: 1px solid #ddd5c7;
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #3b352b;
+  letter-spacing: 0.2px;
+}
+
+.playstore-pill svg {
+  flex-shrink: 0;
+}
+
+.playstore-pill code {
+  font-family: monospace;
+  font-size: 10px;
+  color: #8c5a2b;
+  margin-left: 4px;
+}
+
+.project-card .playstore-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(24, 22, 19, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 14px;
+  padding: 3px 9px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  backdrop-filter: blur(6px);
+  z-index: 2;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.project-card:hover .playstore-tag {
+  transform: translateY(-2px);
+  background: rgba(183, 81, 22, 0.95);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.button-playstore {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #1b1917;
+  color: #ffffff !important;
+  border: 1px solid #2f2a24;
+  border-radius: 30px;
+  padding: 14px 22px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.button-playstore:hover {
+  background: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff !important;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  align-items: center;
+}
