@@ -537,11 +537,16 @@ class SmsReceiver : BroadcastReceiver() {
             </a>
           ` : ''}
           ${id === 'motologg' ? `
+            <a class="button-apk" href="https://github.com/VIBINK0/moto_logg/releases/latest/download/motologg.apk" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download APK</span>
+              <span class="apk-meta-badge">Android</span>
+            </a>
             <a class="button button-red" href="products.html">
               Explore MOTO LOGG Suite 
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
             </a>
-            <a class="button" href="https://github.com/vibink/motologg" target="_blank" rel="noopener noreferrer" style="border-radius: 30px;">
+            <a class="button" href="https://github.com/VIBINK0/moto_logg" target="_blank" rel="noopener noreferrer" style="border-radius: 30px;">
               View on GitHub
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
             </a>

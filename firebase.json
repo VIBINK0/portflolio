@@ -7,7 +7,9 @@
       "**/.*",
       "**/.*/**",
       "**/node_modules/**",
-      "README.md"
+      "README.md",
+      "downloads/**",
+      "**/*.apk"
     ],
     "cleanUrls": true,
     "trailingSlash": false,
