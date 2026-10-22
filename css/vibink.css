@@ -256,3 +256,149 @@
   border-radius: 6px;
 }
 
+/* ==========================================================================
+   Brand Wordmark: VIBIN K. (Minimalist & Bold)
+   ========================================================================== */
+:where(.hub) .wordmark {
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.2px !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-transform: uppercase !important;
+}
+
+:where(.hub) .wordmark .brand-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:where(.hub) .wordmark .red {
+  color: var(--red, #b75116);
+  font-weight: 900;
+}
+
+/* Ensure wordmark text in transparent editorial header is visible and sharp */
+:where(.hub) .editorial-nav .wordmark {
+  color: #ffffff;
+}
+
+:where(.hub) .editorial-nav .wordmark > span:last-child {
+  display: inline-block !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.2px !important;
+}
+
+/* ==========================================================================
+   Modern Editorial Framed Hero (Rounded Corners with Extra Padding to All Sides)
+   ========================================================================== */
+:where(.hub) .editorial-hero {
+  padding: 40px 4.5% !important; /* Extra padding to all sides */
+  min-height: 100svh !important;
+  background: var(--paper, #f3f3f1) !important;
+  display: flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+:where(.hub) .editorial-frame {
+  width: 100% !important;
+  height: calc(100svh - 80px) !important;
+  min-height: 680px !important;
+  max-height: 1050px !important;
+  border-radius: 28px !important; /* Smooth modern rounded corners */
+  overflow: hidden !important;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.08) !important;
+}
+
+:where(.hub) .editorial-white-panel {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  border-radius: 0 28px 28px 0 !important; /* Clean matching curve */
+}
+
+:where(.hub) .hub-nav.editorial-nav {
+  top: 68px !important;
+  left: 7.5% !important;
+  right: 7.5% !important;
+}
+
+/* Hero Headline & Typography Refinement */
+.hub .editorial-intro h1 {
+  font-size: clamp(48px, 5.4vw, 84px) !important;
+  font-weight: 500 !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.04em !important;
+  margin: 22px 0 32px !important;
+}
+
+.hub .editorial-title-line {
+  display: block;
+}
+
+/* Portrait Photo: Positioned with balanced alignment */
+:where(.hub) .editorial-portrait {
+  left: 17.5% !important;
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  :where(.hub) .editorial-portrait {
+    left: 14.5% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  :where(.hub) .editorial-hero {
+    padding: 18px 14px !important; /* Extra padding to all sides on mobile */
+    min-height: 0 !important;
+    display: block !important;
+  }
+  :where(.hub) .editorial-frame {
+    border-radius: 22px !important;
+    height: 920px !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+  :where(.hub) .editorial-white-panel {
+    border-radius: 0 0 22px 22px !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  :where(.hub) .editorial-portrait {
+    left: 11.5% !important;
+  }
+  :where(.hub) .hub-nav.editorial-nav {
+    top: 36px !important;
+    left: 24px !important;
+    right: 24px !important;
+  }
+  :where(.hub) .editorial-intro {
+    left: 6% !important;
+    right: 6% !important;
+    max-width: calc(100% - 12%) !important;
+  }
+  .hub .editorial-intro h1 {
+    font-size: clamp(28px, 7.5vw, 38px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.02em !important;
+    margin: 16px 0 22px !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+  .hub .editorial-title-line {
+    display: block !important;
+    white-space: normal !important;
+  }
+}
+
+
+
+
+
